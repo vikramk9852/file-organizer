@@ -3,13 +3,11 @@ file organizer is a script written in python, which organizes the files accordin
 It is platform independent (tested on windows10 and ubuntu18.04)
 
 ## execution 
-
-  - **windows**  
-	   Just place code.py file in required directory and run it (To run python3 must be installed).  
-       
-  - **ubuntu**  
-     Open terminal in required directory and run the following command  
-     ```python3 code.py```
+  
+- place the file "code.py" in required directory  
+- open terminal/command prompt and switch to the required directory  
+- run the following command  
+```python code.py```
   
     
 ## result  
