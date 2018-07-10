@@ -7,7 +7,9 @@ It is platform independent (tested on windows10 and ubuntu18.04)
 - place the file "code.py" in required directory  
 - open terminal/command prompt and switch to the required directory  
 - run the following command  
-```python code.py```
+```python code.py```  
+  
+**Note**:- On windows operating system python3 must be installed.
   
     
 ## result  
