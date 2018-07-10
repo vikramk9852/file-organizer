@@ -16,8 +16,8 @@ extension = ['audio', 'compressed', 'android', 'executable', 'image', 'system', 
 try:
 	os.mkdir('others')
 except:
-	print('can not create')
-for i in os.listdir():
+	print('directory others is already created')
+for i in os.listdir(dir):
 	temp = i.split('.')
 	last = len(temp)-1
 	found = False
@@ -32,7 +32,7 @@ for i in os.listdir():
 					try:
 						os.mkdir(extension[j])
 					except:
-						print('can not create')
+						print('directory %s is already created' % extension[j])
 				shutil.move(os.path.join(dir, i), os.path.join(dir, extension[j]))
 				found = True
 				break
