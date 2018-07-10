@@ -7,7 +7,7 @@ It is platform independent (tested on windows10 and ubuntu18.04)
   - **windows**  
 	   Just place code.py file in required directory and run it (To run python3 must be installed).  
        
-  - **ubuntu**
+  - **ubuntu**  
      Open terminal in required directory and run the following command  
      ```python3 code.py```
   
