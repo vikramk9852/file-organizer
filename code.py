@@ -21,8 +21,6 @@ for i in os.listdir(dir):
 	temp = i.split('.')
 	last = len(temp)-1
 	found = False
-	if temp[0] == 'sorter':
-		continue;
 	if os.path.isfile(i):
 		print(temp)
 		for j in range(9):
