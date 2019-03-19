@@ -1,6 +1,25 @@
 import os
 import shutil
-dir = os.getcwd()
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from PIL import Image
+
+
+dialog = Gtk.FileChooserDialog("Please choose a file", None,
+    Gtk.FileChooserAction.SELECT_FOLDER,
+    (Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+        "Select", Gtk.ResponseType.OK))
+
+response = dialog.run()
+if response == Gtk.ResponseType.OK:
+    dir = dialog.get_filename()
+    print(dir)
+
+dialog.destroy()
+
+os.chdir(dir)
+
 check = [False]*9
 files = ['']*10
 files[0] = ['aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'wpl', 'mp4a']
